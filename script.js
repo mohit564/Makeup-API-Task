@@ -5,7 +5,7 @@
     loader.classList.add("display");
 
     const data = await fetch(
-      "http://makeup-api.herokuapp.com/api/v1/products.json"
+      "https://makeup-api.herokuapp.com/api/v1/products.json"
     );
     const products = await data.json();
 
