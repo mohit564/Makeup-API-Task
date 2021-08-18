@@ -49,6 +49,12 @@ async function fetchProducts(products) {
           .addEventListener("click", function () {
             showModal(product);
           });
+
+        const button = document.querySelector(".card:last-child .button");
+        button.onclick = (event) => {
+          event.stopPropagation();
+          return true;
+        };
       });
 
     const navigation = document.createElement("div");
